@@ -12,6 +12,7 @@ EX_INPUT = """1721
 1456"""
 
 def to_list(input: str) -> List[int]:
+    # convert input string to a list
     return [int(x) for x in input.split("\n")]
 
 assert(len(to_list(EX_INPUT))) == 6
