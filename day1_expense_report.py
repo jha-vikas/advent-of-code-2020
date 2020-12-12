@@ -18,6 +18,7 @@ def to_list(input: str) -> List[int]:
 assert(len(to_list(EX_INPUT))) == 6
 
 def generate_combinations(input: List[int], r) -> List[Tuple]:
+    # generates all possible combinations
     return combinations(input, r)
 
 assert(len(list(generate_combinations(to_list(EX_INPUT),2)))) == 15
