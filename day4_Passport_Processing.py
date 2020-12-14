@@ -59,12 +59,16 @@ def is_valid2(passport: str) -> bool:
         return False
     if (passport['eyr'] < 2020) or (passport['eyr'] > 2030):
         return False
+    
+
     if "cm" in passport['hgt']:
         if (hgt < 150) or (hgt > 193):
             return False
-    if "in" in passport['hgt']:
+    elif "in" in passport['hgt']:
         if (hgt < 59) or (hgt > 76):
             return False
+    else:
+        return False
 
     if len(re.findall(r"\#[0-9a-f]+", passport['hcl'])) == 0:
         return False
