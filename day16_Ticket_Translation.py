@@ -30,7 +30,7 @@ nearby tickets:
 5,14,9"""
 
 
-rule = namedtuple("rule", ["low", "high"])
+rule = namedtuple("rule", ["low", "high"]) # should use named tuple better
 
 def input_parser(lines: str) -> List:
     rules, my_ticket, nearby_tickets = lines.split("\n\n")
