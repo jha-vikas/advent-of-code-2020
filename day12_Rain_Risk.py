@@ -78,7 +78,7 @@ class Boat:
             y = self.wp_loc[0]
             x = self.wp_loc[1]
 
-            self.wp_loc[0] = x*math.sin(angle) + y*math.cos(angle)
+            self.wp_loc[0] = x*math.sin(angle) + y*math.cos(angle)  # adding math was unnecessary 
             self.wp_loc[1] = x*math.cos(angle) - y*math.sin(angle)
             
     def total_mov2(self):
